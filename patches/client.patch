@@ -781,22 +781,24 @@
  		if(!this.field_6316_m) {
  			this.renderEngine.func_1067_a();
  		}
-@@ -924,6 +884,14 @@
+@@ -924,6 +884,16 @@
  													this.gameSettings.thirdPersonView = !this.gameSettings.thirdPersonView;
  												}
  
 +												if(Keyboard.getEventKey() == Keyboard.KEY_F6) {
-+													if(!this.isMultiplayerWorld()) {
-+														this.theWorld.worldRandomEvent.event13(this.thePlayer);
-+													} else {
-+														((EntityClientPlayerMP)this.thePlayer).netClientHandler.addToSendQueue(new Packet80Event(20));
-+													}
++													/**
++													 if(!this.isMultiplayerWorld()) {
++													 this.theWorld.worldRandomEvent.event13(this.thePlayer);
++													 } else {
++													 ((EntityClientPlayerMP)this.thePlayer).netClientHandler.addToSendQueue(new Packet80Event(20));
++													 }
++													 */
 +												}
 +
  												if(Keyboard.getEventKey() == this.gameSettings.keyBindInventory.keyCode) {
  													this.displayGuiScreen(new GuiInventory(this.thePlayer.inventory, this.thePlayer.inventory.craftingInventory));
  												}
-@@ -932,7 +900,7 @@
+@@ -932,7 +902,7 @@
  													this.thePlayer.dropPlayerItemWithRandomChoice(this.thePlayer.inventory.decrStackSize(this.thePlayer.inventory.currentItem, 1), false);
  												}
  
