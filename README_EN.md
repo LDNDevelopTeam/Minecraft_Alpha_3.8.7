@@ -87,4 +87,4 @@ Thank you!
 
 ---
 
-- The server is not recommended. Some of them don't work.
+- The server is deprecated. There are some things that don't move.
