@@ -86,3 +86,5 @@ Thank you!
 - Behavior may differ from singleplayer.
 
 ---
+
+- The server is not recommended. Some of them don't work.
